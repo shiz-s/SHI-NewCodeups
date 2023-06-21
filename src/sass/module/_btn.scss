@@ -1,0 +1,40 @@
+@use 'global' as *;
+
+.btn__box{
+    text-align: center;
+    width: 100%;
+    max-width: rem(600);
+}
+
+.btn__box a{
+    display: inline-block;
+    width: rem(202);
+    padding: rem(16) rem(40);
+    background-color: $green;
+    text-align: initial;
+}
+
+.btn__box span{
+    font-family: $base-font-family;
+    font-size: rem(14);
+    font-weight: $normal;
+    color: $white;
+    line-height: 1;
+    text-align: center;
+    // →の起点
+    position: relative;
+}
+
+.btn__box span::after{
+    position: absolute;
+    content:url(../images/common/arrow.png);
+    top: 0;
+    left: 0;
+    width: rem(40);
+    height: rem(6);
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 99;
+}
+
