@@ -11,7 +11,25 @@
     width: rem(202);
     padding: rem(16) rem(40);
     background-color: $green;
+    border: 1px solid $green;
     text-align: initial;
+    // 二重のボタン枠の起点
+    position: relative;
+    transition:  .3s ease;
+
+}
+
+// 重なりボタンを疑似要素で作成
+.btn__box a::after{
+    position: absolute;
+    content: "";
+    width: rem(202);
+    height: rem(54);
+    border: 1px solid $green;
+    background-color: transparent;
+    top: rem(7);
+    left: rem(4);
+    z-index: -1;
 }
 
 .btn__box span{
@@ -23,18 +41,33 @@
     text-align: center;
     // →の起点
     position: relative;
+    transition:  .3s ease;
 }
 
+// 矢印をspanの疑似要素で作成
 .btn__box span::after{
     position: absolute;
     content:url(../images/common/arrow.png);
-    top: 0;
-    left: 0;
-    width: rem(40);
-    height: rem(6);
+    top: rem(5);
+    left: rem(87);
     display: block;
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 99;
+    transition:  .3s ease;
 }
 
+// ホバー時にボタン背景色の色変
+.btn__box a:hover{
+    background-color: $white;
+}
+
+// ホバー時にボタンテキストの色変
+.btn__box a:hover span{
+    color: $green;
+}
+
+// ホバー時に矢印の色変
+.btn__box a:hover span::after{
+    content:url(../images/common/arrow-green.png);
+}

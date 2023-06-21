@@ -22,7 +22,7 @@
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" rel="stylesheet">
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
@@ -47,9 +47,32 @@
       <a href="#" class="btn"><span>View more</span></a>
     </div>
     <div class="space"></div>
-    <div class="img__box">
-      <img src="./images/common/sp-ocean3.jpg" alt="picture of fish">
+    <!-- img -->
+    <picture class="img__box">
+      <source srcset="./assets/images/common/sp-info.jpg" media="(max-width:767px)">
+      <img src="./assets/images/common/pc-info.jpg" alt="魚の写真">
+    </picture>
+    <div class="space"></div>
+    <!-- price-card -->
+    <div class="price-card">
+      <picture class="price-card__img">
+        <source srcset="./assets/images/common/sp-campaign-1.jpg" media="(max-width:767px)">
+        <img src="./assets/images/common/pc-campaign-1.jpg" alt="キャンペーン価格の写真">
+      </picture>
+      <div class="price-card__body">
+        <div class="price-card__body-inner">
+          <div class="price-card__category"><span>ライセンス講習</span></div>
+          <h3 class="price-card__title">ライセンス取得</h3>
+          <p class="price-card__text">全部コミコミ(お一人様)</p>
+          <div class="price-card__info">
+            <div class="price-card__usual-price"><span>¥56,000</span></div>
+            <div class="price-card__campaign-price">¥46,000</div>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="space"></div>
+
 
 
   </main>
