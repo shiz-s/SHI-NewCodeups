@@ -1,29 +1,23 @@
 @use 'global' as *;
 
 .sp-nav{
-    // display: none;
-    position: absolute;
-    top: 0;
-    // 隠す
-    left: 120%;
     width: 100%;
     height: 100vh;
     background-color: $green;
     z-index: 99;
-    overflow: scroll;
-    //animation
-    transition: .3s ease;
+    // overflow: scroll;
+   
 }
 
-.sp-nav.is-active{
-    // display: block;
-    left: 0;
-    @include mq(md){
-        display: none;
-    }
-}
+// .sp-nav.is-active{
+//     // display: block;
+//     // left: 0;
+//     @include mq(md){
+//         display: none;
+//     }
+// }
 
-.sp__nav-wrapper{
+.sp-nav__wrapper{
     display: flex;
     justify-content: center;
     align-items: flex-start;

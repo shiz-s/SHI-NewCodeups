@@ -46,6 +46,7 @@
 }
 
 .header__drawer{
+    z-index: 999;
     display: block;
     width: rem(32);
     @include mq(md){
@@ -63,12 +64,31 @@
 }
 
 // sp nav
-.header-sp__nav{
-    padding-top: rem(104);
+// .header-sp-nav{
+//     padding-top: rem(104);
+// }
+
+.header-sp-nav__inner{
+    padding: 0 rem(37) 0 rem(33);
 }
 
-.header-sp__nav-inner{
-    padding: 0 rem(37) 0 rem(33);
+.header-sp-nav{
+    position: absolute;
+    top: 0;
+    // 隠す
+    left: 120%;
+     //animation
+     transition: .3s ease;
+     overflow: scroll;
+     padding-top: rem(104);
+}
+
+.header-sp-nav.is-active{
+    // display: block;
+    left: 0;
+    @include mq(md){
+                 display: none;
+             }
 }
 
 

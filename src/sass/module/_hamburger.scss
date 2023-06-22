@@ -10,6 +10,7 @@
 
 // ハンバーガーの一つ一つの線の大きさ
 .hamburger span {
+    z-index: 999;
     position: absolute;
     width: inherit;
     height: rem(1);
