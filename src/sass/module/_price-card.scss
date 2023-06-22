@@ -38,22 +38,11 @@
     padding: 0 rem(16);
 }
 
-.price-card__category span{
-    font-family: $second-font-family;
-    font-size: rem(12);
-    font-weight: $normal;
-    color: $green;
-    line-height: 1;
-    padding: rem(9) rem(12);
-    border: 1px solid $green;
+.price-card__category{
+    width: rem(108);
 }
 
 .price-card__title{
-    font-family: $second-font-family;
-    font-size: rem(16);
-    font-weight: $seminormal;
-    color: $green-3;
-    line-height: 1;
     padding-bottom: rem(14);
     border-bottom: 1px solid $green;
     margin-top: rem(14);

@@ -1,0 +1,21 @@
+@use 'global' as *;
+
+.category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category span{
+    font-family: $second-font-family;
+    font-size: rem(12);
+    font-weight: $normal;
+    color: $green;
+    line-height: 1;
+    padding: rem(9) rem(12);
+    border: 1px solid $green;
+    white-space: nowrap;
+    @include mq(md){
+        padding: rem(6) rem(16);
+    }
+}

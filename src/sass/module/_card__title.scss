@@ -1,0 +1,9 @@
+@use 'global' as *;
+
+.card__title{
+    font-family: $second-font-family;
+    font-size: rem(16);
+    font-weight: $seminormal;
+    color: $green-3;
+    line-height: 1;
+}

@@ -22,7 +22,9 @@
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap"
+    rel="stylesheet">
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
@@ -31,7 +33,13 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
+    <div class="header__inner">
+      <picture class="img__box">
+        <source srcset="./assets/images/common/sp-info.jpg" media="(max-width:767px)">
+        <img src="./assets/images/common/pc-info.jpg" alt="魚の写真">
+      </picture>
+    </div>
 
   </header>
   <main>
@@ -54,15 +62,15 @@
     </picture>
     <div class="space"></div>
     <!-- price-card -->
-    <div class="price-card">
+    <div class="price-card card">
       <picture class="price-card__img">
         <source srcset="./assets/images/common/sp-campaign-1.jpg" media="(max-width:767px)">
-        <img src="./assets/images/common/pc-campaign-1.jpg" alt="キャンペーン価格の写真">
+        <img src="./assets/images/common/pc-campaign-1.jpg" alt="魚の写真">
       </picture>
       <div class="price-card__body">
         <div class="price-card__body-inner">
-          <div class="price-card__category"><span>ライセンス講習</span></div>
-          <h3 class="price-card__title">ライセンス取得</h3>
+          <div class="price-card__category category"><span>ライセンス講習</span></div>
+          <h3 class="price-card__title card__title">ライセンス取得</h3>
           <p class="price-card__text">全部コミコミ(お一人様)</p>
           <div class="price-card__info">
             <div class="price-card__usual-price"><span>¥56,000</span></div>
@@ -72,6 +80,53 @@
       </div>
     </div>
     <div class="space"></div>
+    <!-- blog-card -->
+    <div class="blog-card card">
+      <div class="blog-card__inner">
+        <div class="blog-card__img">
+          <img src="./assets/images/common/blog-1.jpg" alt="珊瑚の写真">
+        </div>
+        <div class="blog-card__body">
+          <date datetime="2023-06-22" class="blog-card__date">2023.11/17</date>
+          <div class="blog-card__title-wrapper">
+            <h3 class="blog-card__title card__title">ライセンス取得</h3>
+          </div>
+          <p class="blog-card__text card__text">
+            ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            ここにテキスト
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="space"></div>
+    <!-- voice  card -->
+    <div class="voice-card card">
+      <div class="voice-card__inner">
+        <div class="voice-card__summary">
+          <div class="voice-card__info">
+            <div class="voice-card__personal-info">
+              <p class="voice-card__age-gender">20代(女性)</p>
+              <div class="voice-card__category category"><span>ライセンス講習</span></div>
+            </div>
+            <h3 class="voice-card__title card__title">ここにタイトルが入ります。ここにタイトル</h3>
+          </div>
+          <picture class="voice-card__img">
+            <source srcset="./assets/images/common/sp-voice-1.jpg" media="(max-width:767px)">
+            <img src="./assets/images/common/pc-voice-1.jpg" alt="女性の顔写真">
+          </picture>
+        </div>
+        <p class="voice-card__text card__text">
+          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+          ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。
+          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+          ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。
+          ここにテキストが入ります。
+        </p>
+      </div>
+    </div>
+    <div class="space"></div>
+
 
 
 

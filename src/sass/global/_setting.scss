@@ -48,3 +48,18 @@ body {
 .space{
   padding:2rem;
 }
+
+// ///////////非表示//////////////
+.pc-only{
+  display: none;
+  @include mq(md){
+    display: block;
+  }
+}
+
+.sp-only{
+  display: block;
+  @include mq(md){
+    display: none;
+  }
+}
