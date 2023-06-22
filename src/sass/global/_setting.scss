@@ -50,16 +50,16 @@ body {
 }
 
 // ///////////非表示//////////////
-.pc-only{
-  display: none;
-  @include mq(md){
-    display: block;
-  }
-}
+// .pc-only{
+//   display: none;
+//   @include mq(md){
+//     display: block;
+//   }
+// }
 
-.sp-only{
-  display: block;
-  @include mq(md){
-    display: none;
-  }
-}
+// .sp-only{
+//   display: block;
+//   @include mq(md){
+//     display: none;
+//   }
+// }

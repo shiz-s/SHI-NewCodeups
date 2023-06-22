@@ -1,0 +1,83 @@
+@use 'global' as *;
+
+.header{
+    width: 100%;
+    max-width: 100%;
+    height: rem(80);
+    background-color: $green;
+    // 後でtransparentにすること
+    // background-color: transparent;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.header__inner{
+    width: inherit;
+    padding: 0 rem(15);
+    height: inherit;
+    @include mq(md){
+        padding: 0 rem(40);
+    }
+}
+
+.header__contents{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo__box{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: rem(102);
+    z-index: 999;
+}
+
+.header-logo__box a{
+    cursor: pointer;
+    display: block;
+}
+
+.header__drawer{
+    display: block;
+    width: rem(32);
+    @include mq(md){
+        display: none;
+    }
+}
+
+// pc navはsp時に非表示
+.header-pc__nav{
+    display: none;
+    @include mq(md){
+        display: block;
+        height: inherit;
+    }
+}
+
+// sp nav
+.header-sp__nav{
+    padding-top: rem(104);
+}
+
+.header-sp__nav-inner{
+    padding: 0 rem(37) 0 rem(33);
+}
+
+
+
+
+
+
+
+
+
+
+
