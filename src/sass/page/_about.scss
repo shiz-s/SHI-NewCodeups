@@ -1,0 +1,61 @@
+@use 'global' as *;
+
+.about{
+    margin-top: rem(80);
+}
+
+.about__contents{
+    margin-top: rem(50);
+}
+
+.about__imgs{
+    display: flex;
+}
+
+// アスペクト比
+.about__img-box--big{
+    width: rem(281);
+    position: relative;
+    display: block;
+}
+
+.about__img-box--big::before{
+    content: "";
+    display: block;
+    padding-top: 66.19%;
+}
+
+.about__img-box--big img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+}
+
+.about__img-box--small{
+    width: rem(132);
+    position: relative;
+    display: block;
+}
+
+.about__img-box--small::before{
+    content: "";
+    display: block;
+    padding-top: 146.96%;
+}
+
+.about__img-box--small img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+}
+
+
+
