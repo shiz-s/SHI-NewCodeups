@@ -42,7 +42,16 @@
 
 .header-logo__box a{
     cursor: pointer;
-    display: block;
+    height: inherit;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo__box img{
+    width: 100%;
+    max-width: 100%;
 }
 
 .header__drawer{
@@ -63,17 +72,13 @@
     }
 }
 
-// sp nav
-// .header-sp-nav{
-//     padding-top: rem(104);
-// }
-
 .header-sp-nav__inner{
     padding: 0 rem(37) 0 rem(33);
 }
 
 .header-sp-nav{
     position: absolute;
+    height: 100vh;
     top: 0;
     // 隠す
     left: 120%;
@@ -81,6 +86,7 @@
      transition: .3s ease;
      overflow: scroll;
      padding-top: rem(104);
+     background-color: $green;
 }
 
 .header-sp-nav.is-active{

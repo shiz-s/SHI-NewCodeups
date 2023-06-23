@@ -2,26 +2,20 @@
 
 .sp-nav{
     width: 100%;
-    height: 100vh;
-    background-color: $green;
+    // height: 100vh;
+    // background-color: $green;
     z-index: 99;
-    // overflow: scroll;
-   
 }
-
-// .sp-nav.is-active{
-//     // display: block;
-//     // left: 0;
-//     @include mq(md){
-//         display: none;
-//     }
-// }
 
 .sp-nav__wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    // justify-content: center;
     align-items: flex-start;
-    gap: rem(25);
+    // gap: rem(25);
+    @include mq(md){
+        // gap: rem(142);
+    }
 }
 
 .sp-nav__item{
@@ -47,7 +41,7 @@
 .sp-nav__item--starfish a::before{
     position: absolute;
     content:url(../images/common/sp-starfish.png);
-    top: rem(16);
+    top: rem(23);
     left: rem(-23);
     display: block;
     background-repeat: no-repeat;

@@ -50,4 +50,22 @@
     line-height: 1;
     font-weight: $normal;
     margin-top: rem(5);
+    position: relative;
+}
+
+// ホバー時の下線
+.pc-nav__item--ja::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: rem(1);
+    background-color: $white;
+    top: rem(13);
+    left: 0;
+    transition: .3s;
+}
+
+.pc-nav__item a:hover .pc-nav__item--ja::after{
+    width: 100%;
+
 }

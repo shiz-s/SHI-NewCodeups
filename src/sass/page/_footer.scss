@@ -1,0 +1,90 @@
+@use 'global' as *;
+
+.footer{
+    width: 100%;
+    max-width: 100%;
+    background-color: $green;
+    padding: rem(48) 0 rem(56) 0;
+    @include mq(md){
+        padding: rem(80) 0;
+    }
+}
+
+.footer__inner{
+    padding: 0 rem(26) 0 rem(39);
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    @include mq(md){
+        // max-width: 100%;
+        padding: 0 rem(252) 0 rem(180);
+        // margin: 0 auto;
+    }
+}
+
+.footer__info{
+    @include mq(md){
+        display: flex;
+        justify-content: flex-start;
+        gap: rem(40);
+    }
+}
+
+.footer-logo__box a{
+    display: block;
+    width: rem(120);
+    @include mq(md){
+        width: rem(200);
+    }
+}
+
+.footer__icons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: rem(18.25);
+    margin-top: rem(16);
+}
+
+.footer__icons a{
+    width: rem(32);
+}
+
+.footer-sp-nav{
+    margin-top: rem(24);
+}
+
+.footer__copyright{
+    margin-top: rem(20);
+    @include mq(md){
+        margin-top: rem(80);
+    }
+}
+
+.footer__copyright-text{
+    display: block;
+    font-family: $base-font-family;
+    font-size: rem(12);
+    color: $white;
+    font-weight: $normal;
+    text-align: center;
+}
+
+// pc時のnav itemsの位置調整
+.footer-sp-nav__items-1{
+    @include mq(md){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: rem(142);
+    }
+}
+
+.footer-sp-nav__items-2{
+    @include mq(md){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: rem(142);
+    }
+}
