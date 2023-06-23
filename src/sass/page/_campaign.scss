@@ -1,0 +1,27 @@
+@use 'global' as *;
+
+.campaign{
+    width: 100%;
+    margin-top: rem(40);
+    @include mq(md){
+        margin-top:rem(120)
+    }
+}
+
+.campaign__inner{
+    padding-left: rem(15);
+    @include mq(md){
+        padding-left:rem(180);
+    }
+}
+
+.campaign__swiper{
+    margin-top: rem(24);
+    @include mq(md){
+        margin-top: rem(40);
+    }
+}
+
+.campaign__btn-box{
+    margin-top: rem(40);
+}

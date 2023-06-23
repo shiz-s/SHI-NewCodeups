@@ -26,7 +26,10 @@
     href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap"
     rel="stylesheet">
   <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="./assets/js/script.js"></script>
@@ -142,8 +145,136 @@
     </div>
   </header>
   <main>
+    <section id="mv" class="mv">
+      <div class="mv__inner">
+        <div class="mv__text-box">
+          <h2 class="mv__title">DIVING</h2>
+          <p class="mv__text">into the ocean</p>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper mv__swiper js-mv-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide mv__swiper-slide ">
+              <picture class="mv-swiper__img">
+                <source srcset="./assets/images/common/sp-mv-1.jpg" media="(max-width:767px)">
+                <img src="./assets/images/common/pc-mv-1.jpg" alt="カメの写真">
+              </picture>
+            </div>
+            <div class="swiper-slide mv__swiper-slide ">
+              <picture class="mv-swiper__img">
+                <source srcset="./assets/images/common/sp-mv-2.jpg" media="(max-width:767px)">
+                <img src="./assets/images/common/pc-mv-2.jpg" alt="カメの写真">
+              </picture>
+            </div>
+            <div class="swiper-slide mv__swiper-slide ">
+              <picture class="mv-swiper__img">
+                <source srcset="./assets/images/common/sp-mv-3.jpg" media="(max-width:767px)">
+                <img src="./assets/images/common/pc-mv-3.jpg" alt="カメの写真">
+              </picture>
+            </div>
+            <div class="swiper-slide mv__swiper-slide ">
+              <picture class="mv-swiper__img">
+                <source srcset="./assets/images/common/sp-mv-4.jpg" media="(max-width:767px)">
+                <img src="./assets/images/common/pc-mv-4.jpg" alt="カメの写真">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="campaign" class="campaign">
+      <div class="campaign__inner">
+        <div class="campaign__header-box section-header__box">
+          <p class="campaign__header--en section-header--en">Campaign</p>
+          <h2 class="campaign__header--ja section-header--ja">キャンペーン</h2>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper campaign__swiper js-campaign-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide campaign__swiper-slide">
+              <div class="campaign-price-card price-card card">
+                <picture class="campaign-price-card__img price-card__img">
+                  <source srcset="./assets/images/common/sp-campaign-1.jpg" media="(max-width:767px)">
+                  <img src="./assets/images/common/pc-campaign-1.jpg" alt="魚の写真">
+                </picture>
+                <div class="campaign-card__body price-card__body">
+                  <div class="campaign-card__body-inner price-card__body-inner">
+                    <div class="campaign-card__category price-card__category category"><span>ライセンス講習</span></div>
+                    <h3 class="campaign-card__title price-card__title card__title">ライセンス取得</h3>
+                    <p class="campaign-card__text price-card__text">全部コミコミ(お一人様)</p>
+                    <div class="campaign-card__info price-card__info">
+                      <div class="campaign-card__usual-price price-card__usual-price"><span>¥56,000</span></div>
+                      <div class="campaign-card__campaign-price price-card__campaign-price">¥46,000</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide campaign__swiper-slide">
+              <div class="campaign-price-card price-card card">
+                <picture class="campaign-price-card__img price-card__img">
+                  <source srcset="./assets/images/common/sp-campaign-2.jpg" media="(max-width:767px)">
+                  <img src="./assets/images/common/pc-campaign-2.jpg" alt="魚の写真">
+                </picture>
+                <div class="campaign-price-card__body price-card__body">
+                  <div class="campaign-price-card__body-inner price-card__body-inner">
+                    <div class="campaign-price-card__category  price-card__category category"><span>体験ダイビング</span></div>
+                    <h3 class="campaign-card__title price-card__title card__title">貸切体験ダイビング</h3>
+                    <p class="campaign-card__text price-card__text">全部コミコミ(お一人様)</p>
+                    <div class="campaign-card__info price-card__info">
+                      <div class="campaign-card__usual-price price-card__usual-price"><span>¥24,000</span></div>
+                      <div class="campaign-card__campaign-price price-card__campaign-price">¥18,000</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide campaign__swiper-slide">
+              <div class="campaign-price-card price-card card">
+                <picture class="campaign-price-card__img price-card__img">
+                  <source srcset="./assets/images/common/sp-campaign-3.jpg" media="(max-width:767px)">
+                  <img src="./assets/images/common/pc-campaign-3.jpg" alt="魚の写真">
+                </picture>
+                <div class="campaign-price-card__body price-card__body">
+                  <div class="campaign-price-card__body-inner price-card__body-inner">
+                    <div class="campaign-price-card__category price-card__category category"><span>体験ダイビング</span></div>
+                    <h3 class="campaign-card__title price-card__title card__title">ナイトダイビング</h3>
+                    <p class="campaign-card__text price-card__text">全部コミコミ(お一人様)</p>
+                    <div class="campaign-card__info price-card__info">
+                      <div class="campaign-card__usual-price price-card__usual-price"><span>¥10,000</span></div>
+                      <div class="campaign-card__campaign-price price-card__campaign-price">¥8,000</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide campaign__swiper-slide">
+              <div class="campaign-price price-card card">
+                <picture class="campaign-price-card__img price-card__img">
+                  <source srcset="./assets/images/common/sp-campaign-4.jpg" media="(max-width:767px)">
+                  <img src="./assets/images/common/pc-campaign-4.jpg" alt="魚の写真">
+                </picture>
+                <div class="campaign-price-card__body price-card__body">
+                  <div class="campaign-price-card__body-inner price-card__body-inner">
+                    <div class="campaign-price-card__category price-card__category category"><span>ファンダイビング</span></div>
+                    <h3 class="campaign-card__title price-card__title card__title">貸切ファンダイビング</h3>
+                    <p class="campaign-card__text price-card__text">全部コミコミ(お一人様)</p>
+                    <div class="campaign-card__info price-card__info">
+                      <div class="campaign-card__usual-price price-card__usual-price"><span>¥20,000</span></div>
+                      <div class="campaign-card__campaign-price price-card__campaign-price">¥16,000</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="campaign__btn-box btn__box">
+          <a href="#" class="campaign__btn btn"><span>View more</span></a>
+        </div>
+      </div>
+    </section>
   </main>
-  <div class="space"></div>
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__info">
@@ -197,13 +328,13 @@
               </div>
               <div class="sp-nav__items-2-2 footer-sp-nav__items-2-2">
                 <li class="footer-sp-nav__item sp-nav__item sp-nav__item--starfish sp-nav__item--bold"><a
-                  href="#"><span>よくある質問</span></a></li>
-              <li class="footer-sp-nav__item sp-nav__item sp-nav__item--starfish sp-nav__item--bold"><a
-                  href="#"><span>プライバシー<br>ポリシー</span></a></li>
-              <li class="footer-sp-nav__item sp-nav__item sp-nav__item--starfish sp-nav__item--bold"><a
-                  href="#"><span>利用規約</span></a></li>
-              <li class="footer-sp-nav__item sp-nav__item sp-nav__item--starfish sp-nav__item--bold"><a
-                  href="#"><span>おい問わ合せ</span></a></li>
+                    href="#"><span>よくある質問</span></a></li>
+                <li class="footer-sp-nav__item sp-nav__item sp-nav__item--starfish sp-nav__item--bold"><a
+                    href="#"><span>プライバシー<br>ポリシー</span></a></li>
+                <li class="footer-sp-nav__item sp-nav__item sp-nav__item--starfish sp-nav__item--bold"><a
+                    href="#"><span>利用規約</span></a></li>
+                <li class="footer-sp-nav__item sp-nav__item sp-nav__item--starfish sp-nav__item--bold"><a
+                    href="#"><span>おい問わ合せ</span></a></li>
               </div>
             </ul>
           </div>
@@ -241,7 +372,7 @@
           </div>
         </div>
       </nav> -->
-      
+
     </div>
   </footer>
   <!-- common parts -->
