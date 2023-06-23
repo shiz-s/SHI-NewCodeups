@@ -8,20 +8,32 @@
     }
 }
 
-.campaign__inner{
+// .campaign__inner{
+//     padding-left: rem(15);
+//     @include mq(md){
+//         padding-left:0;
+//     }
+// }
+
+.campaign__contents{
+    margin-top: rem(24);
     padding-left: rem(15);
     @include mq(md){
-        padding-left:0;
+        margin-top: rem(40);
+        padding-left: rem(180);
     }
 }
 
 .campaign__swiper{
-    margin-top: rem(24);
+    padding-bottom: rem(40);
     @include mq(md){
-        margin-top: rem(40);
+        padding-bottom: rem(80);
     }
 }
 
-.campaign__btn-box{
-    margin-top: rem(40);
-}
+// .campaign__btn-box{
+//     margin-top: rem(40);
+//     @include mq(md){
+//         margin-top: rem(80);
+//     }
+// }
