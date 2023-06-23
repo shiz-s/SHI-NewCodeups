@@ -3,6 +3,9 @@
 .section-header__box{
     width: 100%;
     max-width: rem(600);
+    @include mq(md){
+        max-width: 100%;
+    }
 }
 
 .section-header--en{

@@ -11,7 +11,7 @@
 .campaign__inner{
     padding-left: rem(15);
     @include mq(md){
-        padding-left:rem(180);
+        padding-left:0;
     }
 }
 
