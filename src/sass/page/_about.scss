@@ -29,7 +29,6 @@
     position: relative;
 }
 
-// アスペクト比
 .about__img-box--big {
     margin-left: auto;
     width: rem(281);
@@ -41,6 +40,22 @@
     }
 }
 
+.about__img-box--big::after {
+    @include mq(md) {
+        background-image: url(../images/common/pc-about-coral.png);
+        content: "";
+        width: rem(194);
+        height: rem(181);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 999;
+        left: 89%;
+        top: 84%;
+    }
+}
+
+// アスペクト比
 .about__img-box--big::before {
     content: "";
     display: block;
@@ -69,6 +84,7 @@
     }
 }
 
+// アスペクト比
 .about__img-box--small::before {
     content: "";
     display: block;
