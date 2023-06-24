@@ -1,0 +1,115 @@
+@use 'global' as *;
+
+.swiper-button-next {
+    width: rem(80);
+    height: rem(80);
+    display: none;
+    position: static;
+    // @include mq(md) {
+    //     display: block;
+    //     right: 22%;
+    //     top: -19%;
+    // }
+}
+
+.swiper-button-next::after {
+    background-image: url(../images/common/pc-campaign-arrow-right.png);
+    content: "";
+    width: rem(80);
+    height: rem(80);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+    position: absolute;
+
+    @include mq(md) {
+        display: block;
+        // right: 22%;
+        // top: -19%;
+        right: 946%;
+        top: -697%;
+    }
+}
+
+.swiper-button-prev {
+    position: static;
+    width: rem(80);
+    height: rem(80);
+    display: none;
+    // @include mq(md) {
+    //     display: block;
+    //     left: 64%;
+    //     top: -18%;
+    // }
+
+}
+
+.swiper-button-prev::after {
+    background-image: url(../images/common/pc-campaign-arrow-left.png);
+    content: "";
+    width: rem(80);
+    height: rem(80);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+    position: absolute;
+
+    @include mq(md) {
+        display: block;
+        // left: 64%;
+        // top: -18%;
+        left: 3100%;
+        top: -689%;
+    }
+}
+
+// .swiper-campaign-button-next {
+//     width: rem(80);
+//     height: rem(80);
+//     display: none;
+
+//     @include mq(md) {
+//         display: block;
+//         right: 22%;
+//         top: -19%;
+//     }
+// }
+
+// .swiper-campaign-button-next::after {
+//     background-image: url(../images/common/pc-campaign-arrow-right.png);
+//     content: "";
+//     width: rem(80);
+//     height: rem(80);
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     display: none;
+//     @include mq(md){
+//         display: block;
+//     }
+// }
+
+// .swiper-campaign-button-prev {
+//     width: rem(80);
+//     height: rem(80);
+//     display: none;
+
+//     @include mq(md) {
+//         display: block;
+//         left: 64%;
+//         top: -18%;
+//     }
+
+// }
+
+// .swiper-campaign-button-prev::after {
+//     background-image: url(../images/common/pc-campaign-arrow-left.png);
+//     content: "";
+//     width: rem(80);
+//     height: rem(80);
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     display: none;
+//     @include mq(md){
+//         display: block;
+//     }
+// }

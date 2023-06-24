@@ -3,11 +3,16 @@
 .mv {
     width: 100%;
     max-width: 100%;
-    height: 100vh;
+    height: 100%;
+    // height: 100vh;
     position: relative;
     @include mq(md){
         height: auto;
     }
+}
+
+.mv__inner{
+    height: inherit;
 }
 
 .mv__text-box {
@@ -51,7 +56,7 @@
 .mv-swiper__img::before {
     content: "";
     display: block;
-    padding-top: 207.86%;
+    padding-top: 177.9%;
 
     @include mq(md) {
         padding-top: 53.33%;

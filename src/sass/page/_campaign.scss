@@ -9,27 +9,31 @@
 }
 
 // .campaign__inner{
-//     padding-left: rem(15);
-//     @include mq(md){
-//         padding-left:0;
-//     }
+//     position: relative;
 // }
 
+
+
 .campaign__contents{
+    width: 100%;
     margin-top: rem(24);
     padding-left: rem(15);
+    position: relative;
+   
     @include mq(md){
         margin-top: rem(40);
         padding-left: rem(180);
+        
     }
 }
 
-.campaign__swiper{
-    padding-bottom: rem(40);
-    @include mq(md){
-        padding-bottom: rem(80);
-    }
-}
+// .campaign__swiper{
+//     position: relative;
+//     padding-bottom: rem(40);
+//     @include mq(md){
+//         padding-bottom: rem(80);
+//     }
+// }
 
 // .campaign__btn-box{
 //     margin-top: rem(40);
@@ -37,3 +41,10 @@
 //         margin-top: rem(80);
 //     }
 // }
+
+.campaign__swiper-slide{
+    padding-bottom: rem(40);
+    @include mq(md){
+        padding-bottom: rem(80);
+    }
+}

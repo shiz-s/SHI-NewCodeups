@@ -28,10 +28,14 @@ var campaignSwiper = new Swiper(".js-campaign-swiper", {
     loop: true, // ループ
     // centeredSlides: true, // アクティブなスライドを中央にする
     autoplay: {
-        delay: 5000,
+        delay: 4000,
     },
     speed: 200,
     slidesPerView: 1.2, // 一度に表示する枚数
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     
     breakpoints:{
         768:{
