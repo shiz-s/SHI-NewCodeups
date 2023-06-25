@@ -1,20 +1,60 @@
 @use 'global' as *;
 
-.blog{
+.blog {
+    width: 100%;
     margin-top: rem(80);
-    @include mq(md){
-        margin-top: rem(100);
+
+    @include mq(md) {
+        margin-top: 0;
         padding-top: rem(100);
+        width: 100%;
+        background-image: url(../images/common/pc-blog-bg.jpg);
+        background-size: 1440px 500px;
+        aspect-ratio: 1440 / 500;
+        background-repeat: no-repeat;
+        // 魚の画像を入れる
+        position: relative;
     }
 }
 
-.blog__contents{
-    margin-top: rem(24);
+// 魚の絵
+.blog::before{
     @include mq(md){
+        position: absolute;
+        content: url(../images/common/blog-fish.png);
+        top: 5%;
+        left: 10%;
+        width: rem(437);
+        height: rem(201);
+    }
+}
+
+.blog__contents {
+    margin-top: rem(24);
+
+    @include mq(md) {
         margin-top: rem(80);
     }
 }
 
-.blog__header--en{
+.blog__header--en {
+    @include mq(md) {
+        color: $green-2;
+    }
+}
+
+.blog__header--en.section-header--en::first-letter {
     color: $green-2;
+}
+
+.blog__header--ja {
+    @include mq(md) {
+        color: $white;
+    }
+}
+
+.blog__btn-box{
+    @include mq(md){
+        margin-top: rem(80);
+    }
 }

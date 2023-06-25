@@ -1,0 +1,72 @@
+@use 'global' as *;
+
+.voice {
+    width: 100%;
+    margin-top: rem(80);
+
+    @include mq(md) {
+        position: relative;
+    }
+}
+
+.voice__inner {
+    padding: 0 rem(15);
+    margin-right: auto;
+    margin-left: auto;
+
+    @include mq(md) {
+        max-width: $inner + strip-unit($padding-pc) * 2;
+        padding-right: $padding-pc;
+        padding-left: $padding-pc;
+    }
+}
+
+.voice-card+.voice-card {
+    margin-top: rem(40);
+
+    @include mq(md) {
+        margin-top: 0;
+    }
+}
+
+// 魚の絵
+.voice::before {
+    @include mq(md) {
+        position: absolute;
+        content: url(../images/common/voice-fish.png);
+        top: -12%;
+        left: 10%;
+        width: rem(301);
+        height: rem(138);
+    }
+}
+
+.voice__contents {
+    margin-top: rem(24);
+
+    @include mq(md) {
+        margin-top: rem(80);
+        position: relative;
+    }
+}
+
+// タツノオトシゴの絵
+.voice__contents::after {
+    @include mq(md) {
+        position: absolute;
+        content: url(../images/common/voice-seahorse.png);
+        bottom: -51%;
+        right: 0;
+        width: rem(71);
+        height: rem(162);
+    }
+}
+
+
+.voice__btn-box {
+    margin-top: rem(40);
+
+    @include mq(md) {
+        margin-top: rem(80);
+    }
+}

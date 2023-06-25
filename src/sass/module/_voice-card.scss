@@ -1,5 +1,16 @@
 @use 'global' as *;
 
+.voice__cards{
+    width: 100%;
+    max-width: rem(600);
+    @include mq(md){
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: rem(40);
+    }
+}
+
 .voice-card{
     width: rem(345);
     padding: rem(15) 0 rem(24) 0;
