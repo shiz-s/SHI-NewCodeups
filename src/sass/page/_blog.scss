@@ -1,0 +1,20 @@
+@use 'global' as *;
+
+.blog{
+    margin-top: rem(80);
+    @include mq(md){
+        margin-top: rem(100);
+        padding-top: rem(100);
+    }
+}
+
+.blog__contents{
+    margin-top: rem(24);
+    @include mq(md){
+        margin-top: rem(80);
+    }
+}
+
+.blog__header--en{
+    color: $green-2;
+}
