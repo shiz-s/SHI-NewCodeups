@@ -1,1 +1,40 @@
 @use 'global' as *;
+
+.information{
+    width: 100%;
+    margin-top: rem(80);
+    padding: rem(80) 0;
+    background-color: $green-2;
+}
+
+.information__img-box{
+    display: block;
+    margin-top: rem(24);
+}
+
+.information__body{
+    padding-top: rem(24);
+}
+
+.information__body-title{
+    font-family: $second-font-family;
+    font-size: rem(20);
+    font-weight: $bold;
+    line-height: calc(24 / 20);
+    color: $green-3;
+    padding-bottom: rem(4);
+    border-bottom: 1px solid $green;
+}
+
+.information__body-text{
+    font-family: $second-font-family;
+    font-size: rem(16);
+    font-weight: $normal;
+    font-weight: calc(24 / 16);
+    color: $green-3;
+    margin-top: rem(12);
+}
+
+.information__btn-box{
+    margin-top: rem(40);
+}
