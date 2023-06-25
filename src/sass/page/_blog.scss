@@ -37,12 +37,6 @@
     }
 }
 
-// .blog__header--en {
-//     @include mq(md) {
-//         color: $green-2;
-//     }
-// }
-
 .blog__header--en.section-header--en::first-letter {
     @include mq(md){
         color: $green-2;
