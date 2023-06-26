@@ -74,9 +74,9 @@ var campaignSwiper = new Swiper(".js-campaign-swiper", {
     spaceBetween: 20, // スライド間の距離
     loop: true, // ループ
     // centeredSlides: true, // アクティブなスライドを中央にする
-    autoplay: {
-        delay: 4000,
-    },
+    // autoplay: {
+    //     delay: 400,
+    // },
     speed: 200,
     slidesPerView: 1.2, // 一度に表示する枚数
     navigation: {
@@ -85,9 +85,37 @@ var campaignSwiper = new Swiper(".js-campaign-swiper", {
     },
 
     breakpoints: {
-        768: {
+        1400: {
+            slidesPerView: 4.0,
+        },
+
+        1368: {
+            slidesPerView: 3.8,
+        },
+
+        1268: {
             slidesPerView: 3.5,
-        }
+        },
+        
+        1068: {
+            slidesPerView: 3.0,
+        },
+        
+        768: {
+            slidesPerView: 2.8,
+        },
+
+        668: {
+            slidesPerView: 2.2,
+        },
+
+        568: {
+            slidesPerView: 1.8,
+        },
+
+        468: {
+            slidesPerView: 1.5,
+        },
     }
 });
 

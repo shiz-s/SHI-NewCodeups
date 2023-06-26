@@ -77,16 +77,18 @@
     @include mq(md){
         display: flex;
         justify-content: center;
-        align-items: center;
-        gap: rem(142);
+        align-items: flex-start;
+        gap: 34.29%;
+        width: 41.98%;
     }
 }
 
 .footer-sp-nav__items-2{
     @include mq(md){
+        width: 41.37%;
         display: flex;
         justify-content: center;
-        align-items: center;
-        gap: rem(142);
+        align-items: flex-start;
+        gap: 34.2%;
     }
 }

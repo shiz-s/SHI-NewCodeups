@@ -5,8 +5,27 @@
 
     @include mq(md) {
         margin-top: rem(140);
+        position: relative;
     }
 }
+
+.about::after {
+    @include mq(md) {
+        background-image: url(../images/common/pc-about-coral.png);
+        content: "";
+        width: rem(194);
+        height: rem(181);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 999;
+        right: 5%;
+        bottom: -12%;
+
+    }
+}
+
+
 
 .about__contents {
     margin-top: rem(50);
@@ -31,7 +50,8 @@
 
 .about__img-box--big {
     margin-left: auto;
-    width: rem(281);
+    width: 83.88%;
+    // width: rem(281);
     position: relative;
     display: block;
 
@@ -41,17 +61,27 @@
 }
 
 .about__img-box--big::after {
-    @include mq(md) {
-        background-image: url(../images/common/pc-about-coral.png);
+    background-image: url(../images/common/sp-about-2.jpg);
         content: "";
-        width: rem(194);
-        height: rem(181);
+        width: 47.0%;
+        height: 104.3%;
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
         z-index: 999;
-        left: 89%;
-        top: 84%;
+        left: -15%;
+        top: -10%;
+    @include mq(md) {
+        background-image: url(../images/common/pc-about-2.jpg);
+        content: "";
+        width: 45.4%;
+        height: 104.1%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 9;
+        left: -15%;
+        top: -15%;
     }
 }
 
@@ -74,7 +104,8 @@
 
 .about__img-box--small {
     width: rem(132);
-    position: absolute;
+    position: relative;
+    // position: absolute;
     display: block;
     top: -14%;
     left: 0;
@@ -103,7 +134,7 @@
 
 .about__body {
     @include mq(md) {
-
+        z-index: 99;
         // 中の要素を横並び
         display: flex;
         justify-content: center;
