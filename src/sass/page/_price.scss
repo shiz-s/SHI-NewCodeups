@@ -52,7 +52,21 @@
     height: 100%;
     transform: translate(-50%,-50%);
     object-fit: cover;
+
+    display: block;
 }
+
+// 画像アニメーション
+.price__img-box div.color{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #10404c;
+}
+
 
 .price__contents{
     margin-top: rem(24);
