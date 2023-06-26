@@ -1,0 +1,10 @@
+@use 'global' as *;
+
+.page-top-btn__box a{
+    width: rem(48);
+    height: rem(48);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transform: rotate(-90deg);
+}
