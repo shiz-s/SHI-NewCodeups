@@ -565,42 +565,50 @@
         </div>
       </div>
     </section>
-    <section  id="contact" class="contact">
+    <section id="contact" class="contact">
       <div class="contact__inner inner">
-        <div class="contact__contents">
-          <div class="contact__info">
-            <picture class="contact-logo__box">
-              <a href="#" class="contact-logo__link">
-                <source srcset="./assets/images/common/sp-contact-logo.png" media="(max-width:767px)">
-                <img src="./assets/images/common/pc-contact-logo.png" alt="Codeupsのロゴ">
-              </a>
-            </picture>
-            <div class="contact__access">
-              <p class="contact__address">沖縄県那覇市1-1</p>
-              <p class="contact__tel">TEL:0120-000-0000</p>
-              <p class="contact__business-hour">営業時間:8:30-19:00</p>
-              <p class="contact__closed">定休日:毎週火曜日</p>
+        <div class="contact__contents-wrapper">
+          <div class="contact__contents">
+            <div class="contact__info">
+              <picture class="contact-logo__box">
+                <a href="#" class="contact-logo__link">
+                  <source srcset="./assets/images/common/sp-contact-logo.png" media="(max-width:767px)">
+                  <img src="./assets/images/common/pc-contact-logo.png" alt="Codeupsのロゴ">
+                </a>
+              </picture>
+              <div class="contact__details">
+                <div class="contact__access">
+                  <p class="contact__address">沖縄県那覇市1-1</p>
+                  <p class="contact__tel">TEL:0120-000-0000</p>
+                  <p class="contact__business-hour">営業時間:8:30-19:00</p>
+                  <p class="contact__closed">定休日:毎週火曜日</p>
+                </div>
+                <div class="contact__map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.5174896403378!2d127.67674557515036!3d26.212369977071564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5699e7a7e0423%3A0x3875539360a1de9d!2z44CSOTAwLTAwMjEg5rKW57iE55yM6YKj6KaH5biC5rOJ5bSO77yR5LiB55uu77yR4oiS77yRIOmCo-imh-W4guW9ueaJgA!5e0!3m2!1sja!2sjp!4v1687736762559!5m2!1sja!2sjp"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+              </div>
             </div>
-            <div class="contact__map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.5174896403378!2d127.67674557515036!3d26.212369977071564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5699e7a7e0423%3A0x3875539360a1de9d!2z44CSOTAwLTAwMjEg5rKW57iE55yM6YKj6KaH5biC5rOJ5bSO77yR5LiB55uu77yR4oiS77yRIOmCo-imh-W4guW9ueaJgA!5e0!3m2!1sja!2sjp!4v1687736762559!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-          <div class="contact__contact">
-            <div class="contact__header-box section-header__box inner">
-              <p class="contact__header--en section-header--en">Contact</p>
-              <h2 class="contact__header--ja section-header--ja">お問合せ</h2>
-            </div>
-            <p class="contact__text">ご予約・お問い合わせはコチラ</p>
-            <div class="contact__btn-box btn__box">
-              <a href="#" class="contact__btn btn"><span>Contact us</span></a>
+            <div class="contact__contact">
+              <div class="contact__header-box section-header__box">
+                <p class="contact__header--en section-header--en">Contact</p>
+                <h2 class="contact__header--ja section-header--ja">お問合せ</h2>
+              </div>
+              <p class="contact__text">ご予約・お問い合わせはコチラ</p>
+              <div class="contact__btn-box btn__box">
+                <a href="#" class="contact__btn btn"><span>Contact us</span></a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="contact__page-top-btn-box  page-top-btn__box">
-          <a href="" class="contact__page-top-btn page-top-btn btn">
-            <img src="./assets/images/common/pc-campaign-arrow-right.png" href="" alt="ページトップボタン">
-          </a>
-        </div>
+      </div>
+      <div class="page-top-btn__box">
+        <a href="" class="page-top-btn btn">
+          <img src="./assets/images/common/pc-campaign-arrow-right.png" href="" alt="ページトップボタン">
+        </a>
       </div>
     </section>
   </main>
@@ -674,26 +682,30 @@
       </div>
     </div>
   </footer>
+
   <!-- common parts -->
   <!-- title -->
-  <div class="section-header__box">
+  <!-- <div class="section-header__box">
     <p class="section-header--en">Campaign</p>
     <h2 class="section-header--ja">キャンペーン</h2>
   </div>
-  <div class="space"></div>
+  <div class="space"></div> -->
+
   <!-- btn -->
-  <div class="btn__box">
+  <!-- <div class="btn__box">
     <a href="#" class="btn"><span>View more</span></a>
   </div>
-  <div class="space"></div>
+  <div class="space"></div> -->
+
   <!-- img -->
-  <picture class="img__box">
+  <!-- <picture class="img__box">
     <source srcset="./assets/images/common/sp-info.jpg" media="(max-width:767px)">
     <img src="./assets/images/common/pc-info.jpg" alt="魚の写真">
   </picture>
-  <div class="space"></div>
+  <div class="space"></div> -->
+
   <!-- price-card -->
-  <div class="price-card card">
+  <!-- <div class="price-card card">
     <picture class="price-card__img">
       <source srcset="./assets/images/common/sp-campaign-1.jpg" media="(max-width:767px)">
       <img src="./assets/images/common/pc-campaign-1.jpg" alt="魚の写真">
@@ -710,9 +722,10 @@
       </div>
     </div>
   </div>
-  <div class="space"></div>
+  <div class="space"></div> -->
+
   <!-- blog-card -->
-  <div class="blog-card card">
+  <!-- <div class="blog-card card">
     <div class="blog-card__inner">
       <div class="blog-card__img">
         <img src="./assets/images/common/blog-1.jpg" alt="珊瑚の写真">
@@ -730,9 +743,10 @@
       </div>
     </div>
   </div>
-  <div class="space"></div>
+  <div class="space"></div> -->
+
   <!-- voice  card -->
-  <div class="voice-card card">
+  <!-- <div class="voice-card card">
     <div class="voice-card__inner">
       <div class="voice-card__summary">
         <div class="voice-card__info">
@@ -756,7 +770,7 @@
       </p>
     </div>
   </div>
-  <div class="space"></div>
+  <div class="space"></div> -->
 
 </body>
 
