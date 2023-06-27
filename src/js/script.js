@@ -62,9 +62,9 @@ topBtn.click(function () {
 
 // mv swiper
 var swiper = new Swiper(".js-mv-swiper", {
-    autoplay: {
-        delay: 5000,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    // },
     roundLength: true,
     speed: 200,
 });

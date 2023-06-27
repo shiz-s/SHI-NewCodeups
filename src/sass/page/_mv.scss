@@ -18,7 +18,7 @@
 .mv__text-box {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 52.5%;
     transform: translate(-50%, -50%);
     z-index: 99;
 }
@@ -27,7 +27,7 @@
     font-family: $fourth-font-family;
     color: $white;
     font-size: rem(40);
-    letter-spacing: 0.216em;
+    letter-spacing: 0.53em;
     line-height: 1;
     font-weight: $normal;
     @include mq(md) {
@@ -39,12 +39,13 @@
 .mv__text {
     font-family: $base-font-family;
     color: $white;
-    font-size: rem(20);
-    letter-spacing: 0.216em;
+    font-size: rem(19);
+    letter-spacing: 0.1em;
     line-height: 1;
     font-weight: $normal;
     white-space: nowrap;
     text-align: center;
+    margin-top: rem(13);
 }
 
 // アスペクト比
