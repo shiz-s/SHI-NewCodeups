@@ -9,7 +9,18 @@
     }
 }
 
-.about::after {
+.about__contents {
+    margin-top: rem(50);
+
+    @include mq(md) {
+        margin-top: rem(120);
+        position: relative;
+
+    }
+}
+
+// イソギンチャクの絵
+.about__contents::after {
     @include mq(md) {
         background-image: url(../images/common/pc-about-coral.png);
         content: "";
@@ -19,20 +30,8 @@
         background-repeat: no-repeat;
         position: absolute;
         z-index: 999;
-        right: 5%;
+        right: -8%;
         bottom: -12%;
-
-    }
-}
-
-
-
-.about__contents {
-    margin-top: rem(50);
-
-    @include mq(md) {
-        margin-top: rem(120);
-
     }
 }
 
@@ -64,7 +63,8 @@
     background-image: url(../images/common/sp-about-2.jpg);
         content: "";
         width: 47.0%;
-        height: 104.3%;
+        // height: 104.3%;
+        aspect-ratio: 132 / 194;
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
@@ -75,7 +75,8 @@
         background-image: url(../images/common/pc-about-2.jpg);
         content: "";
         width: 45.4%;
-        height: 104.1%;
+        // height: 104.1%;
+        aspect-ratio: 399 / 606;
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;

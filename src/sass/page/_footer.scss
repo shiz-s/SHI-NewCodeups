@@ -52,8 +52,14 @@
     width: rem(32);
 }
 
-.footer-sp-nav{
+.footer-sp-nav.inner{
     margin-top: rem(24);
+    padding-left: 0;
+    padding-right: 0;
+    @include mq(md){
+        padding-left: rem(20);
+        padding-right: rem(20);
+    }
 }
 
 .footer__copyright{

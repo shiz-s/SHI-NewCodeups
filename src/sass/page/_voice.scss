@@ -30,12 +30,12 @@
 }
 
 // 魚の絵
-.voice::before {
+.voice__contents::before {
     @include mq(md) {
         position: absolute;
         content: url(../images/common/voice-fish.png);
-        top: -12%;
-        left: 10%;
+        top: -38%;
+        left:-10%;
         width: rem(301);
         height: rem(138);
     }

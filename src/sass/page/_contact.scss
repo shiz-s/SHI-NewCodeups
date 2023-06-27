@@ -9,22 +9,6 @@
     }
 }
 
-// 魚の絵
-.contact::before{
-    position: absolute;
-    content: url(../images/common/sp-contact-fish.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: rem(109);
-    right: 5%;
-    top: -5%;
-    @include mq(md){
-        content: url(../images/common/pc-contact-fish.png);
-        width: rem(301);
-
-    }
-}
-
 .contact__contents{
     width: 100%;
     @include mq(md){
@@ -35,11 +19,29 @@
 }
 
 .contact__contents-wrapper{
+    position: relative;
     @include mq(md){
         width: 100%;
         max-width: $inner;
         padding: rem(80) 0;
         box-shadow: 4px 4px 10px rgba(0,0,0, .25);
+    }
+}
+
+// 魚の絵
+.contact__contents-wrapper::after{
+    position: absolute;
+    content: url(../images/common/sp-contact-fish.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: rem(109);
+    right: 0;
+    top: -5%;
+    @include mq(md){
+        content: url(../images/common/pc-contact-fish.png);
+        width: rem(301);
+        right: -16%;
+
     }
 }
 
