@@ -194,7 +194,11 @@
     @include mq(md) {
         color: $white;
         margin-top: 0;
-
+        // 三点リーダー
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 6;
     }
 }
 
