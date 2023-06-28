@@ -1,24 +1,26 @@
 @use 'global' as *;
 
-.sp-nav{
+.sp-nav {
     width: 100%;
     // height: 100vh;
     // background-color: $green;
     z-index: 99;
 }
 
-.sp-nav__wrapper{
+.sp-nav__wrapper {
     display: flex;
     justify-content: space-between;
     // justify-content: center;
     align-items: flex-start;
+
     // gap: rem(25);
-    @include mq(md){
-        // gap: rem(142);
+    @include mq(md) {
+        justify-content: initial;
+        gap: 17%;
     }
 }
 
-.sp-nav__item{
+.sp-nav__item {
     display: block;
     font-family: $second-font-family;
     font-size: rem(16);
@@ -28,33 +30,46 @@
 }
 
 // item間の余白
-.sp-nav__item a{
+.sp-nav__item a {
     display: block;
     padding: rem(8) 0;
     // padding: rem(12) 0;
 }
 
-.sp-nav__item--bold.sp-nav__item--padding-wide a{
+.sp-nav__item--bold.sp-nav__item--padding-wide a {
     padding: rem(18) 0 rem(18) 0;
 }
 
-.sp-nav__item.sp-nav__item--pb-wide a{
+.sp-nav__item.sp-nav__item--pb-wide a {
     padding: rem(8) 0 rem(18) 0;
 }
 
-.sp-nav__item.sp-nav__item--paddingtb-25 a{
+.sp-nav__item.sp-nav__item--paddingtb-25 a {
     padding: rem(25) 0;
-  }
+}
+
+.sp-nav__item.sp-nav__item--paddingtb-25-12 a {
+    padding: rem(25) 0;
+    @include mq(md){
+        padding: rem(12) 0;
+    }
+}
+
+.sp-nav__item.sp-nav__item--paddingtb-27 a {
+    @include mq(md){
+        padding: rem(27) 0;
+    }
+}
 
 // クラゲマーク疑似要素（standard:top19 Ver.）
-.sp-nav__item--starfish a{
+.sp-nav__item--starfish a {
     display: block;
     position: relative;
 }
 
-.sp-nav__item--starfish a::before{
+.sp-nav__item--starfish a::before {
     position: absolute;
-    content:url(../images/common/sp-starfish.png);
+    content: url(../images/common/sp-starfish.png);
     top: rem(19);
     left: rem(-23);
     display: block;
@@ -64,14 +79,14 @@
 }
 
 // クラゲマーク疑似要素（top27 Ver.）
-.sp-nav__item--starfish27 a{
+.sp-nav__item--starfish27 a {
     display: block;
     position: relative;
 }
 
-.sp-nav__item--starfish27 a::before{
+.sp-nav__item--starfish27 a::before {
     position: absolute;
-    content:url(../images/common/sp-starfish.png);
+    content: url(../images/common/sp-starfish.png);
     top: rem(27);
     left: rem(-23);
     display: block;
@@ -81,7 +96,7 @@
 }
 
 // 太字のitem
-.sp-nav__item--bold a{
+.sp-nav__item--bold a {
     font-weight: $bold;
     padding: rem(14) 0;
     // padding: rem(20) 0;

@@ -51,20 +51,25 @@
     align-items: center;
     gap: rem(18.25);
     margin-top: rem(16);
+    @include mq(md){
+        margin-top: rem(27);
+    }
 }
 
 .footer__icons a{
     width: rem(23);
+    @include mq(md){
+        width: rem(30);
+    }
 }
 
 .footer-sp-nav.inner{
     margin-top: rem(25);
     // padding-left: 0;
     // padding-right: 0;
-
     padding: 0 rem(26) 0 rem(39);
     @include mq(md){
-        margin-top: rem(24);
+        margin-top: rem(3);
         padding-left: rem(20);
         padding-right: rem(20);
     }
@@ -73,7 +78,7 @@
 .footer__copyright{
     margin-top: rem(10);
     @include mq(md){
-        margin-top: rem(80);
+        margin-top: rem(55);
     }
 }
 
@@ -84,6 +89,10 @@
     color: $white;
     font-weight: $normal;
     text-align: center;
+    @include mq(md){
+        font-size: rem(14);
+        line-height: 1.2857;
+    }
 }
 
 // sp時のnav itemsの位置調整
@@ -121,3 +130,9 @@
     }
 }
 
+.sp-only{
+    display: block;
+    @include mq(md){
+      display: none;
+    }
+  }

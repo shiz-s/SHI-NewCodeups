@@ -107,7 +107,7 @@
 
 // ファンダイビングのタグ
 .voice-card__category.voice-card__category--wide{
-    @include mmq(md){
+    @include mq(md){
         width: rem(128);
     }
 }

@@ -6,8 +6,8 @@
     padding: rem(80) 0 rem(81);
     background-color: $green-2;
     @include mq(md){
-        margin-top: rem(140);
-        padding: rem(100) 0;
+        margin-top: rem(144);
+        padding: rem(100) 0 rem(106) 0;
     }
 }
 
@@ -89,8 +89,8 @@
         content: url(../images/common/price-fish.png);
         width: rem(437);
         height: rem(201);
-        bottom: -20%;
-        left: -5%;
+        bottom: -24%;
+        left: -7.5%;
     }
 }
 
@@ -148,6 +148,10 @@
     font-weight: $normal;
     color: $green-3;
     line-height: 1.6;
+    @include mq(md){
+        font-size: rem(16);
+        line-height: 1.4;
+    }
 }
 
 .price__btn-box{

@@ -40,8 +40,8 @@
     @include mq(md){
         content: url(../images/common/pc-contact-fish.png);
         width: rem(301);
-        right: -16%;
-        top: -5%;
+        right: -12%;
+        top: -10%;
 
     }
 }
@@ -56,14 +56,37 @@
     @include mq(md){
         width: 56.94%;
         padding-right: rem(81);
-        border-right: 1px solid $green-2
+        // border-right: 1px solid $green-2;
+        
+        position: relative;
     }
 }
+
+.contact__info::after{
+    @include mq(md){
+        position: absolute;
+        content: "";
+        width: rem(1);
+        height: 100%;
+        top: 0;
+        left: 100%;
+        background-color: $green;
+        z-index: 99;
+    
+    }
+}
+
+
+
+
 
 .contact-logo__box a{
     margin: 0 auto;
     display: block;
     width: 58.4%;
+    @include mq(md){
+        width:44.4%
+    }
 }
 
 .contact-logo__box{
@@ -90,6 +113,7 @@
 .contact__access{
     @include mq(md){
         width:33.2%;
+        margin-top: rem(-14);
     }
 }
 
