@@ -30,10 +30,23 @@
 // item間の余白
 .sp-nav__item a{
     display: block;
-    padding: rem(12) 0;
+    padding: rem(8) 0;
+    // padding: rem(12) 0;
 }
 
-// クラゲマーク疑似要素
+.sp-nav__item--bold.sp-nav__item--padding-wide a{
+    padding: rem(18) 0 rem(18) 0;
+}
+
+.sp-nav__item.sp-nav__item--pb-wide a{
+    padding: rem(8) 0 rem(18) 0;
+}
+
+.sp-nav__item.sp-nav__item--paddingtb-25 a{
+    padding: rem(25) 0;
+  }
+
+// クラゲマーク疑似要素（standard:top19 Ver.）
 .sp-nav__item--starfish a{
     display: block;
     position: relative;
@@ -42,7 +55,24 @@
 .sp-nav__item--starfish a::before{
     position: absolute;
     content:url(../images/common/sp-starfish.png);
-    top: rem(23);
+    top: rem(19);
+    left: rem(-23);
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 999;
+}
+
+// クラゲマーク疑似要素（top27 Ver.）
+.sp-nav__item--starfish27 a{
+    display: block;
+    position: relative;
+}
+
+.sp-nav__item--starfish27 a::before{
+    position: absolute;
+    content:url(../images/common/sp-starfish.png);
+    top: rem(27);
     left: rem(-23);
     display: block;
     background-repeat: no-repeat;
@@ -53,5 +83,6 @@
 // 太字のitem
 .sp-nav__item--bold a{
     font-weight: $bold;
-    padding: rem(20) 0;
+    padding: rem(14) 0;
+    // padding: rem(20) 0;
 }

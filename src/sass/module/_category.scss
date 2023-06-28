@@ -12,9 +12,12 @@
     font-weight: $normal;
     color: $green;
     line-height: 1;
-    padding: rem(9) rem(12);
+    padding: rem(11) rem(12) rem(7);
     border: 1px solid $green;
     white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include mq(md){
         padding: rem(6) rem(16);
     }

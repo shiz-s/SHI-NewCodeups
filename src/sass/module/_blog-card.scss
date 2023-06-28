@@ -62,7 +62,7 @@
 }
 
 .blog-card__body {
-    padding-top: rem(24);
+    padding-top: rem(22);
 }
 
 .blog-card__body-inner {
@@ -80,10 +80,11 @@
 
 // ボーダーボトムの下線のシャドウを下だけに付けるため
 .blog-card__title-wrapper {
+    margin-top: rem(1);
     /* overflow-hiddenをし左右の影を隠しつつ、padding-bottomを
     付けて下の影だけだす*/
     padding-bottom: rem(10);
-    margin-top: rem(7);
+    // margin-top: rem(7);
     overflow: hidden;
 }
 
@@ -101,6 +102,7 @@
 }
 
 .blog-card__text--shadow {
+    margin-top: rem(5);
     text-align: start;
     // テキストの下に影
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -112,6 +114,7 @@
 }
 
 .blog-card__text {
+    margin-top: rem(5);
     // 三点リーダー
     overflow: hidden;
     display: -webkit-box;
