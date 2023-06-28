@@ -86,7 +86,7 @@
     text-align: center;
 }
 
-// pc時のnav itemsの位置調整
+// sp時のnav itemsの位置調整
 .footer-sp-nav__items-1{
     @include mq(md){
         display: flex;

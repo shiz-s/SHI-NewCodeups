@@ -72,8 +72,15 @@
     }
 }
 
-.header-sp-nav__inner{
-    padding: 0 rem(37) 0 rem(33);
+// .header-sp-nav__inner{
+//     padding: 0 rem(37) 0 rem(33);
+// }
+
+.header-sp-nav__wrapper{
+    margin-top: rem(-18);
+    @include mq(md){
+        margin-top: 0;
+    }
 }
 
 .header-sp-nav{
@@ -87,6 +94,11 @@
      overflow: scroll;
      padding-top: rem(104);
      background-color: $green;
+    //  試しに
+     margin-left: auto;
+    margin-right: auto;
+    padding-left: 37px;
+    padding-right: 37px;
 }
 
 .header-sp-nav.is-active{
@@ -96,6 +108,42 @@
                  display: none;
              }
 }
+
+// sp時のnav itemsの位置調整
+.header-sp-nav__items-1{
+    @include mq(md){
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 34.29%;
+        width: 41.98%;
+    }
+}
+
+.header-sp-nav__items-2{
+    @include mq(md){
+        width: 41.37%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 34.2%;
+    }
+}
+
+.header-sp-nav__items-1-2{
+    margin-top: rem(-1);
+    @include mq(md){
+        margin-top: 0;
+    }
+}
+
+.header-sp-nav__items-2-2{
+    margin-top: rem(12);
+    @include mq(md){
+        margin-top: 0;
+    }
+}
+
 
 
 
