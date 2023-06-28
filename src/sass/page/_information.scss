@@ -7,7 +7,7 @@
     background-color: $green-2;
     @include mq(md){
         margin-top: rem(140);
-        padding: rem(100) 0;
+        padding: rem(98) 0 rem(98);
     }
 }
 
@@ -18,8 +18,11 @@
     padding-right: 15px;
     width: 100%;
     @include mq(md){
-        padding-left: rem(20);
-        padding-right: rem(20);
+        // padding-left: rem(20);
+        // padding-right: rem(20);
+        max-width: $inner + strip-unit($padding-pc) * 2;
+        padding-right: $padding-pc;
+        padding-left: $padding-pc;
     }
 }
 
@@ -31,7 +34,7 @@
         max-width: 100%;
         display: flex;
         justify-content: center;
-        align-items: center;
+        // align-items: center;
         gap: 4.45%;
         margin-top: rem(40);
     }
@@ -71,7 +74,7 @@
 .information__body{
     padding-top: rem(24);
     @include mq(md){
-        padding-top: 0;
+        padding-top: rem(59);
         width: 45.55%;
     }
 }
@@ -84,6 +87,9 @@
     color: $green-3;
     padding-bottom: rem(4);
     border-bottom: 1px solid $green;
+    @include mq(md){
+        font-size: rem(24);
+    }
 }
 
 .information__body-text{
@@ -93,6 +99,9 @@
     font-weight: calc(24 / 16);
     color: $green-3;
     margin-top: rem(12);
+    @include mq(md){
+        margin-top: rem(10);
+    }
 }
 
 .information__btn-box{

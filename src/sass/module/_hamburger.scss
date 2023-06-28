@@ -4,7 +4,7 @@
 .hamburger {
     z-index: 999;
     position: relative;
-    width: rem(41);
+    width: rem(34);
     height: rem(24);
 }
 
@@ -34,6 +34,13 @@
 }
 
 /*is-OPEN時の動き*/
+
+.hamburger.is-active{
+    width: rem(41);
+}
+
+
+
 .hamburger.is-active span:nth-child(1) {
     left: 13%;
     top: 45%;

@@ -23,8 +23,8 @@
     @include mq(md){
         position: absolute;
         content: url(../images/common/blog-fish.png);
-        top: 5%;
-        left: 10%;
+        top: 3%;
+        left: 7%;
         width: rem(437);
         height: rem(201);
     }
@@ -34,7 +34,7 @@
     margin-top: rem(24);
 
     @include mq(md) {
-        margin-top: rem(80);
+        margin-top: rem(77);
     }
 }
 
@@ -44,9 +44,16 @@
     }
 }
 
-.blog__header--ja {
+.blog__header--en{
     @include mq(md) {
         color: $white;
+    }
+}
+
+.blog__header--ja .section-header--ja {
+    @include mq(md) {
+        color: $white;
+        font-size: rem(12);
     }
 }
 

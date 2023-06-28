@@ -71,7 +71,7 @@ var swiper = new Swiper(".js-mv-swiper", {
 
 // campaign swiper
 var campaignSwiper = new Swiper(".js-campaign-swiper", {
-    spaceBetween: 20, // スライド間の距離
+    spaceBetween: 42, // スライド間の距離
     loop: true, // ループ
     // centeredSlides: true, // アクティブなスライドを中央にする
     // autoplay: {
@@ -85,13 +85,13 @@ var campaignSwiper = new Swiper(".js-campaign-swiper", {
     },
 
     breakpoints: {
-        1400: {
-            slidesPerView: 4.0,
-        },
+        // 1400: {
+        //     slidesPerView: 4.0,
+        // },
 
-        1368: {
-            slidesPerView: 3.8,
-        },
+        // 1368: {
+        //     slidesPerView: 3.8,
+        // },
 
         1268: {
             slidesPerView: 3.5,

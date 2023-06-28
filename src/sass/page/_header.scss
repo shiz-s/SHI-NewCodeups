@@ -12,6 +12,9 @@
     top: 0;
     left: 0;
     z-index: 999;
+    @include mq(md){
+        height: rem(90);
+    }
 }
 
 .header__inner{
@@ -38,6 +41,9 @@
     align-items: center;
     width: rem(102);
     z-index: 999;
+    @include mq(md){
+        width: rem(133);
+    }
 }
 
 .header-logo__box a{

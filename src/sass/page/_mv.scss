@@ -21,6 +21,10 @@
     left: 52.5%;
     transform: translate(-50%, -50%);
     z-index: 99;
+    @include mq(md){
+        top: 55.5%;
+        left: 51.5%;
+    }
 }
 
 .mv__title {
@@ -32,7 +36,7 @@
     font-weight: $normal;
     @include mq(md) {
         font-size: rem(80);
-        letter-spacing: 0.432em;
+        letter-spacing: 0.52em;
     }
 }
 
@@ -46,6 +50,9 @@
     white-space: nowrap;
     text-align: center;
     margin-top: rem(13);
+    @include mq(md){
+        font-size: rem(20);
+    }
 }
 
 // アスペクト比
