@@ -9,7 +9,9 @@
     transform: rotate(-90deg);
 
     @include mq(md) {
-        bottom: rem(-145);
+        bottom: rem(-138);
         right: rem(20);
+        width: rem(80);
+        height: rem(80);
     }
 }

@@ -43,14 +43,17 @@
 }
 
 // 魚の絵
-.voice__contents::before {
+.voice::before {
     @include mq(md) {
         position: absolute;
-        content: url(../images/common/voice-fish.png);
-        top: -54%;
-        left:-7.5%;
+        content: "";
+        background-image: url(../images/common/voice-fish.png);
+        top: -19%;
+        left:6.8%;
         width: rem(301);
         height: rem(138);
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 }
 
@@ -58,7 +61,8 @@
     margin-top: rem(43);
 
     @include mq(md) {
-        margin-top: rem(23);
+        margin-top: rem(26);
+        // margin-top: rem(23);
         position: relative;
     }
 }

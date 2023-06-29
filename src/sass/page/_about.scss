@@ -9,7 +9,6 @@
     }
 }
 
-
 .about__contents {
     margin-top: rem(56);
 
@@ -20,7 +19,7 @@
     }
 }
 
-// イソギンチャクの絵
+// // イソギンチャクの絵
 .about__contents::after {
     @include mq(md) {
         background-image: url(../images/common/pc-about-coral.png);
@@ -56,7 +55,7 @@
     display: block;
 
     @include mq(md) {
-        width: rem(880);
+        width: 81.3%;
     }
 }
 
