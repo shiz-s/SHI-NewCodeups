@@ -19,6 +19,7 @@
     margin: 0 auto;
     @include mq(md){
         // max-width: 100%;
+        // padding: 0 rem(252) 0 rem(202);
         padding: 0 rem(252) 0 rem(180);
         // margin: 0 auto;
     }
@@ -69,9 +70,16 @@
     // padding-right: 0;
     padding: 0 rem(26) 0 rem(39);
     @include mq(md){
-        margin-top: rem(3);
-        padding-left: rem(20);
-        padding-right: rem(20);
+        margin-top: rem(6);
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.footer-sp-nav__inner{
+    @include mq(md){
+        padding-left: rem(23);
+        padding-right: rem(23);
     }
 }
 
@@ -95,40 +103,42 @@
     }
 }
 
-// sp時のnav itemsの位置調整
-.footer-sp-nav__items-1{
-    @include mq(md){
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 34.29%;
-        width: 41.98%;
-    }
-}
+// // pc時のnav itemsの位置調整
+// .footer-sp-nav__items-1{
+//     @include mq(md){
+//         display: flex;
+//         justify-content: flex-end;
+//         // justify-content: center;
+//         align-items: flex-start;
+//         gap: 34.29%;
+//         width: 100%;
+//     }
+// }
 
-.footer-sp-nav__items-2{
-    @include mq(md){
-        width: 41.37%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 34.2%;
-    }
-}
+// .footer-sp-nav__items-2{
+//     @include mq(md){
+//         width: 96.3%;
+//         display: flex;
+//         justify-content: flex-start;
+//         // justify-content: center;
+//         align-items: flex-start;
+//         gap: 34.2%;
+//     }
+// }
 
-.footer-sp-nav__items-1-2{
-    margin-top: rem(-1);
-    @include mq(md){
-        margin-top: 0;
-    }
-}
+// .footer-sp-nav__items-1-2{
+//     margin-top: rem(-1);
+//     @include mq(md){
+//         margin-top: 0;
+//     }
+// }
 
-.footer-sp-nav__items-2-2{
-    margin-top: rem(12);
-    @include mq(md){
-        margin-top: 0;
-    }
-}
+// .footer-sp-nav__items-2-2{
+//     margin-top: rem(12);
+//     @include mq(md){
+//         margin-top: 0;
+//     }
+// }
 
 .sp-only{
     display: block;
