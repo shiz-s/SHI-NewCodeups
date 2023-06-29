@@ -24,7 +24,8 @@
     transition:  .3s ease;
     z-index: 99;
 
-    padding: 14px 37px 14px 37px;
+    padding:rem(14) rem(37) rem(14) rem(37);
+    // padding: 14px 37px 14px 37px;
     text-align: left;
 
 }
@@ -52,15 +53,19 @@
     // →の起点
     position: relative;
     transition:  .3s ease;
+    white-space:nowrap;
 }
 
 // 矢印をspanの疑似要素で作成
 .btn__box span::after{
     position: absolute;
-    content:url(../images/common/arrow.png);
+    content: "";
+    background-image:url(../images/common/arrow-white.png);
     top: rem(5);
-    left: rem(81);
+    left: rem(85);
     display: block;
+    width: rem(40);
+    height: rem(7);
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 99;
