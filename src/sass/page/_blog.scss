@@ -19,14 +19,17 @@
 }
 
 // 魚の絵
-.blog::before{
-    @include mq(md){
+.blog::before {
+    @include mq(md) {
         position: absolute;
-        content: url(../images/common/blog-fish.png);
+        content: "";
+        background-image: url(../images/common/blog-fish.png);
         top: 3%;
         left: 7%;
         width: rem(437);
         height: rem(201);
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 }
 
@@ -39,12 +42,12 @@
 }
 
 .blog__header--en.section-header--en::first-letter {
-    @include mq(md){
+    @include mq(md) {
         color: $green-2;
     }
 }
 
-.blog__header--en{
+.blog__header--en {
     @include mq(md) {
         color: $white;
     }
@@ -57,8 +60,8 @@
     }
 }
 
-.blog__btn-box{
-    @include mq(md){
+.blog__btn-box {
+    @include mq(md) {
         margin-top: rem(80);
     }
 }

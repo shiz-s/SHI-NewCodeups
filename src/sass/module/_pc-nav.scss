@@ -44,6 +44,7 @@
 }
 
 .pc-nav__item--ja{
+    white-space: nowrap;
     font-family: $second-font-family;
     font-size: rem(10);
     color: $white;

@@ -60,16 +60,16 @@ var campaignSwiper = new Swiper(".js-campaign-swiper", {
 
     breakpoints: {
 
-        1268: {
+        1350: {
             slidesPerView: 3.5,
         },
 
-        1068: {
+        1185: {
             slidesPerView: 3.0,
         },
 
         768: {
-            slidesPerView: 2.8,
+            slidesPerView: 2.5,
         },
 
         668: {

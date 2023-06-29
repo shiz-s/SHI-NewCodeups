@@ -10,14 +10,14 @@
     }
 }
 
-.voice__header--ja{
-    @include mq(md){
+.voice__header--ja {
+    @include mq(md) {
         margin-top: rem(7);
     }
 }
 
-.voice__header--ja.section-header--ja{
-    @include mq(md){
+.voice__header--ja.section-header--ja {
+    @include mq(md) {
         font-size: rem(12);
     }
 }
@@ -49,7 +49,7 @@
         content: "";
         background-image: url(../images/common/voice-fish.png);
         top: -19%;
-        left:6.8%;
+        left: 6.8%;
         width: rem(301);
         height: rem(138);
         background-size: contain;
@@ -71,14 +71,16 @@
 .voice__contents::after {
     @include mq(md) {
         position: absolute;
-        content: url(../images/common/voice-seahorse.png);
+        content: "";
+        background-image: url(../images/common/voice-seahorse.png);
         bottom: -51%;
         right: 0;
         width: rem(71);
         height: rem(162);
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 }
-
 
 .voice__btn-box {
     margin-top: rem(40);
