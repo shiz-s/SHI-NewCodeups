@@ -38,12 +38,20 @@
     }
 }
 
-.footer-logo__box a{
+// .footer-logo__box a{
+//     display: block;
+//     width: rem(120);
+//     @include mq(md){
+//         width: rem(200);
+//     }
+// }
+
+.footer-logo__link{
     display: block;
-    width: rem(120);
-    @include mq(md){
-        width: rem(200);
-    }
+        width:35%;
+        @include mq(md){
+            width: rem(200);
+        }
 }
 
 .footer__icons{
