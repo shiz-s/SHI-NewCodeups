@@ -4,8 +4,6 @@
     width: 100%;
     max-width: 100%;
     height: rem(80);
-    // background-color: $green;
-    // 後でtransparentにすること
     background-color: rgb(13, 41, 54, 0.68);
 
     position: fixed;
@@ -78,10 +76,6 @@
     }
 }
 
-// .header-sp-nav__inner{
-//     padding: 0 rem(37) 0 rem(33);
-// }
-
 .header-sp-nav__wrapper{
     margin-top: rem(-18);
     @include mq(md){
@@ -93,14 +87,12 @@
     position: absolute;
     height: 100vh;
     top: 0;
-    // 隠す
     left: 120%;
      //animation
      transition: .3s ease;
      overflow: scroll;
      padding-top: rem(104);
      background-color: $green;
-    //  試しに
      margin-left: auto;
     margin-right: auto;
     padding-left: 37px;

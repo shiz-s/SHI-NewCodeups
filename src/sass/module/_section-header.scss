@@ -28,7 +28,6 @@
     text-align: center;
     font-weight: $normal;
     line-height: calc(18 / 12);
-    // margin-top: rem(4);
     @include mq(md){
         margin-top: rem(8);
     }

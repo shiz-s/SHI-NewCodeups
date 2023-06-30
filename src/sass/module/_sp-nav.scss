@@ -16,22 +16,8 @@
     @include mq(md) {
         grid-template-columns: 43.04% 44.80%;
         gap: 15%;
-        // grid-template-columns: rem(414) rem(430);
-        // gap: rem(151);
     }
 }
-// .sp-nav__wrapper {
-//     display: flex;
-//     justify-content: space-between;
-//     // justify-content: center;
-//     align-items: flex-start;
-
-//     // gap: rem(25);
-//     @include mq(md) {
-//         justify-content: initial;
-//         gap: 17%;
-//     }
-// }
 
 // pc時のnav itemsの位置調整
 .sp-nav__items-1{
@@ -83,7 +69,6 @@
 .sp-nav__item a {
     display: block;
     padding: rem(8) 0;
-    // padding: rem(12) 0;
 }
 
 .sp-nav__item--bold.sp-nav__item--padding-wide a {
@@ -155,5 +140,4 @@
 .sp-nav__item--bold a {
     font-weight: $bold;
     padding: rem(14) 0;
-    // padding: rem(20) 0;
 }

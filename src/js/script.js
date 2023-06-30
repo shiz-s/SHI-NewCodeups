@@ -36,9 +36,9 @@ topBtn.click(function () {
 
 // mv swiper
 var swiper = new Swiper(".js-mv-swiper", {
-    // autoplay: {
-    //     delay: 5000,
-    // },
+    autoplay: {
+        delay: 4000,
+    },
     roundLength: true,
     speed: 200,
 });
@@ -48,9 +48,9 @@ var campaignSwiper = new Swiper(".js-campaign-swiper", {
     spaceBetween: 42, // スライド間の距離
     loop: true, // ループ
     // centeredSlides: true, // アクティブなスライドを中央にする
-    // autoplay: {
-    //     delay: 400,
-    // },
+    autoplay: {
+        delay: 4000,
+    },
     speed: 200,
     slidesPerView: 1.2, // 一度に表示する枚数
     navigation: {

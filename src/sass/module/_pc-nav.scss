@@ -41,6 +41,8 @@
     color: $white;
     line-height: 1;
     font-weight: $normal;
+
+    position: relative;
 }
 
 .pc-nav__item--ja{
@@ -51,22 +53,28 @@
     line-height: 1;
     font-weight: $normal;
     margin-top: rem(5);
-    position: relative;
 }
 
 // ホバー時の下線
-.pc-nav__item--ja::after{
+.pc-nav__item--en::after{
     position: absolute;
     content: "";
-    width: 0;
+    width: 100%;
     height: rem(1);
     background-color: $white;
-    top: rem(13);
+    top: rem(38);
     left: 0;
     transition: .3s;
+    // X方向0、Y方向1
+    transform: scale(0, 1);
+    transform-origin: center top;
 }
 
-.pc-nav__item a:hover .pc-nav__item--ja::after{
-    width: 100%;
-
+.pc-nav__item-link:hover .pc-nav__item--en::after{
+    // ホバーしたらX方向にスケール拡大
+    transform: scale(1,1);
 }
+
+
+
+

@@ -10,10 +10,6 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 4%;
-        // gap: rem(40);
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
     }
 }
 
@@ -90,7 +86,6 @@
     /* overflow-hiddenをし左右の影を隠しつつ、padding-bottomを
     付けて下の影だけだす*/
     padding-bottom: rem(10);
-    // margin-top: rem(7);
     overflow: hidden;
 }
 

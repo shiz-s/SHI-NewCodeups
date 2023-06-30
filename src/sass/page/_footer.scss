@@ -38,14 +38,6 @@
     }
 }
 
-// .footer-logo__box a{
-//     display: block;
-//     width: rem(120);
-//     @include mq(md){
-//         width: rem(200);
-//     }
-// }
-
 .footer-logo__link{
     display: block;
         width:35%;
@@ -110,43 +102,6 @@
         line-height: 1.2857;
     }
 }
-
-// // pc時のnav itemsの位置調整
-// .footer-sp-nav__items-1{
-//     @include mq(md){
-//         display: flex;
-//         justify-content: flex-end;
-//         // justify-content: center;
-//         align-items: flex-start;
-//         gap: 34.29%;
-//         width: 100%;
-//     }
-// }
-
-// .footer-sp-nav__items-2{
-//     @include mq(md){
-//         width: 96.3%;
-//         display: flex;
-//         justify-content: flex-start;
-//         // justify-content: center;
-//         align-items: flex-start;
-//         gap: 34.2%;
-//     }
-// }
-
-// .footer-sp-nav__items-1-2{
-//     margin-top: rem(-1);
-//     @include mq(md){
-//         margin-top: 0;
-//     }
-// }
-
-// .footer-sp-nav__items-2-2{
-//     margin-top: rem(12);
-//     @include mq(md){
-//         margin-top: 0;
-//     }
-// }
 
 .sp-only{
     display: block;

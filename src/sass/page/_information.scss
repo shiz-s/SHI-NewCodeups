@@ -18,8 +18,6 @@
     padding-right: 15px;
     width: 100%;
     @include mq(md){
-        // padding-left: rem(20);
-        // padding-right: rem(20);
         max-width: $inner + strip-unit($padding-pc) * 2;
         padding-right: $padding-pc;
         padding-left: $padding-pc;

@@ -9,7 +9,7 @@
     @include mq(md){
         max-width: 100%;
         display: grid;
-        // grid-template-columns: repeat(2, 1fr);
+        // これ！
         grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
         gap: 3.5%;
     }
@@ -103,8 +103,6 @@
 .voice-card__category{
     display: block;
     width: rem(108);
-    // margin-top: rem(13);
-    // margin-bottom: rem(10);
     @include mq(md){
         margin-top: 0;
         width: rem(116);

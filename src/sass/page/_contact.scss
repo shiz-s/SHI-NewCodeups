@@ -89,16 +89,6 @@
     }
 }
 
-// .contact-logo__box a {
-//     margin: 0 auto;
-//     display: block;
-//     width: 58.4%;
-
-//     @include mq(md) {
-//         width: 44.4%
-//     }
-// }
-
 .contact-logo__link{
     
     display: block;
@@ -108,16 +98,11 @@
 
 .contact-logo__box {
     margin: 0 auto;
-    // width: 58.4%;
     width: 59.05%;
-    // width: 88.05%;
     display: block;
-    // padding-bottom: rem(9);
-    // border-bottom: 1px solid $green;
 
     @include mq(md) {
         width: 44.4%;
-        // width: 100%;
     }
 }
 
@@ -176,8 +161,6 @@
     @include mq(md) {
         width: 62.1%;
         margin-top: 0;
-        // margin-left: 0;
-        // margin-right: 0;
     }
 }
 
