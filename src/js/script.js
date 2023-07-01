@@ -88,28 +88,53 @@ var campaignSwiper = new Swiper(".js-campaign-swiper", {
 
 // inview
 //要素の取得とスピードの設定
-var box = $('.js-inview'),
-    speed = 700;
+// var box = $('.js-inview'),
+//     speed = 700;
 
-//.colorboxの付いた全ての要素に対して下記の処理を行う
-box.each(function () {
-    $(this).append('<div class="is-inview"></div>')
-    var color = $(this).find($('.is-inview')),
-        image = $(this).find('img');
-    var counter = 0;
+// //.js-inviewの付いた全ての要素に対して下記の処理を行う
+// box.each(function () {
+//     $(this).append('<div class="is-inview"></div>')
+//     var color = $(this).find($('.is-inview')),
+//         image = $(this).find('img');
+//     var counter = 0;
 
-    image.css('opacity', '0');
-    color.css('width', '0%');
-    //inviewを使って背景色が画面に現れたら処理をする
-    color.on('inview', function () {
-        if (counter == 0) {
-            $(this).delay(200).animate({ 'width': '100%' }, speed, function () {
-                image.css('opacity', '1');
-                $(this).css({ 'left': '0', 'right': 'auto' });
-                $(this).animate({ 'width': '0%' }, speed);
-            })
-            counter = 1;
-        }
+//     image.css('opacity', '0');
+//     color.css('width', '0%');
+// //     //inviewを使って背景色が画面に現れたら処理をする
+//     color.on('inview', function () {
+//         if (counter == 0) {
+//             $(this).delay(200).animate({ 'width': '100%' }, speed, function () {
+//                 image.css('opacity', '1');
+//                 $(this).css({ 'left': '0', 'right': 'auto' });
+//                 $(this).animate({ 'width': '0%' }, speed);
+//             })
+//             counter = 1;
+//         }
+//     });
+// });
+
+// スクロールして表示領域に入ったらclass付与
+$(function () {
+    $(".js-inview").on("inview", function () {
+      $(this).addClass("is-inview");
     });
-});
+  });
 
+// 案の３
+// $(function(){
+//     speed = 1000;
+//     easing = "easeInOutCubic";
+//     // タグ生成
+//     $("js-inview").wrap("<div class='mask-wrap'>");
+//     $("js-inview").append("<div class='mask-bg'></div>");
+//     $('js-inview').on('inview',function(event,isInView,visiblePartX,visiblePartY){
+//       if(isInView){
+        
+//         $(this).stop().animate({"left":"0%"},function(){
+//           $(this).find(".mask-bg").stop().animate({"left":"100%"});
+//         });
+        
+//       }
+    
+//     });
+//   });
