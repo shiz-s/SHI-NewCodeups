@@ -14,6 +14,8 @@
 }
 
 .blog-card {
+    cursor: pointer;
+    display: block;
     margin: 0 auto;
     padding: rem(16) 0 rem(24) 0;
     width: 100%;

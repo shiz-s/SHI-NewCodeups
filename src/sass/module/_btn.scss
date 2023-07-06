@@ -85,7 +85,7 @@
     background-color: transparent;
     top: rem(4);
     left: rem(2);
-    z-index: 0;
+    z-index: -1;
 }
 
 // 矢印をspanの疑似要素で作成
@@ -103,20 +103,5 @@
     z-index: 99;
     transition:  .3s ease;
 }
-
-// // ホバー時にボタン背景色の色変
-// .btn__box a:hover{
-//     background-color: $white;
-// }
-
-// // ホバー時にボタンテキストの色変
-// .btn__box a:hover span{
-//     color: $green;
-// }
-
-// // ホバー時に矢印の色変
-// .btn__box a:hover span::after{
-//     content:url(../images/common/arrow-green.png);
-// }
 
 

@@ -76,6 +76,15 @@
     }
 }
 
+.footer-sp-nav__item a{
+    opacity: 1;
+}
+
+.footer-sp-nav__item a:hover{
+    opacity: .7;
+}
+
+
 .footer-sp-nav__inner{
     @include mq(md){
         padding-left: rem(23);
