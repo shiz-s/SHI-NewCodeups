@@ -18,13 +18,20 @@
 .campaign__contents{
     width: 100%;
     margin-top: rem(27);
-    padding-left: rem(15);
+    // padding-left: rem(15);
     // position: relative;
    
     @include mq(md){
         margin-top: rem(40);
+        // padding-left: rem(180);
+    }
+}
+
+.campaign__contents-wrapper{
+    padding-left: rem(15);
+
+    @include mq(md){
         padding-left: rem(180);
-        
     }
 }
 

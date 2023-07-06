@@ -9,13 +9,20 @@
     }
 }
 
+.about__inner{
+    max-width: rem(600);
+    margin: 0 auto;
+    @include mq(md){
+        max-width: 100%;
+    }
+}
+
 .about__contents {
     margin-top: rem(56);
 
     @include mq(md) {
         margin-top: rem(120);
         position: relative;
-
     }
 }
 
