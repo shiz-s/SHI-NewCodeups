@@ -113,7 +113,7 @@
     display: block;
     background-repeat: no-repeat;
     background-size: contain;
-    z-index: 999;
+    z-index: 99;
 }
 
 // クラゲマーク疑似要素（top27 Ver.）
@@ -126,14 +126,34 @@
     position: absolute;
     content: "";
     background-image: url(../images/common/sp-starfish.png);
-    top: rem(11);
+    top: rem(25);
     left: rem(-23);
     width: rem(18);
     height: rem(18);
     display: block;
     background-repeat: no-repeat;
     background-size: contain;
-    z-index: 999;
+    z-index: 99;
+}
+
+// クラゲマーク疑似要素（top28 Ver.）
+.sp-nav__item--starfish28 a {
+    display: block;
+    position: relative;
+}
+
+.sp-nav__item--starfish28 a::before {
+    position: absolute;
+    content: "";
+    background-image: url(../images/common/sp-starfish.png);
+    top: rem(28);
+    left: rem(-23);
+    width: rem(18);
+    height: rem(18);
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 99;
 }
 
 // 太字のitem
