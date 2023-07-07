@@ -11,13 +11,33 @@
     display: none;
     position: absolute;
 
+    @include mq(xl) {
+        display: block;
+        right: 0;
+        top: 0;
+        left:82%;
+        top: 3%;
+    }
+
+    @include mq(lg) {
+        display: block;
+        right: 0;
+        top: 0;
+        left:84%;
+        top: 3%;
+    }
+
+
     @include mq(md) {
         display: block;
         right: 0;
         top: 0;
-        right: 12.5%;
+        left:87%;
         top: 3%;
     }
+
+
+
 }
 
 .swiper-button-prev.swiper-campaign-button-prev {

@@ -18,6 +18,15 @@
     }
 }
 
+.blog__inner.inner{
+    max-width: rem(600);
+    @include mq(md){
+        // max-width: 100%;
+        max-width:78.5%;
+        // max-width: $inner + strip-unit($padding-pc) * 2;
+    }
+}
+
 // 魚の絵
 .blog::before {
     @include mq(md) {

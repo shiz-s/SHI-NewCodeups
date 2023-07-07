@@ -9,15 +9,26 @@
 
 
 .sp-nav__wrapper {
-    justify-content: space-between;
+    justify-content: center;
     display: grid;
     grid-template-columns: 7.125rem 8rem;
-    gap: rem(29);
+    gap: 24%;
     @include mq(md) {
+        justify-content: space-between;
         grid-template-columns: 43.04% 44.80%;
         gap: 15%;
     }
 }
+// .sp-nav__wrapper {
+//     justify-content: space-between;
+//     display: grid;
+//     grid-template-columns: 7.125rem 8rem;
+//     gap: rem(29);
+//     @include mq(md) {
+//         grid-template-columns: 43.04% 44.80%;
+//         gap: 15%;
+//     }
+// }
 
 // pc時のnav itemsの位置調整
 .sp-nav__items-1{

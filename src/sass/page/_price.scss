@@ -19,7 +19,8 @@
     margin-left: auto;
 
     @include mq(md) {
-        max-width: $inner + strip-unit($padding-pc) * 2;
+        max-width: 78.5%;
+        // max-width: $inner + strip-unit($padding-pc) * 2;
         padding-right: $padding-pc;
         padding-left: $padding-pc;
     }

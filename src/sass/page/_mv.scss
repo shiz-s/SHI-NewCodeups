@@ -3,9 +3,7 @@
 .mv {
     width: 100%;
     max-width: 100%;
-    height: 100%;
-    // height100vhにできない
-    // height: 100vh;
+    height: 100vh;
     position: relative;
     @include mq(md){
         height: auto;
@@ -16,22 +14,39 @@
     height: inherit;
 }
 
+.mv__swiper{
+    height: 100vh;
+}
+
+.mv__swiper-slide{
+    height: 100vh;
+}
+
+.mv-swiper__img{
+    height: inherit;
+}
+
 .mv__text-box {
     position: absolute;
     top: 50%;
-    left: 52.5%;
+    left: 50%;
+    // top: 50%;
+    // left: 52.5%;
     transform: translate(-50%, -50%);
     z-index: 99;
     @include mq(md){
-        top: 55.5%;
-        left: 51.5%;
+        top: 50%;
+        left: 50%;
+        // top: 55.5%;
+        // left: 51.5%;
     }
 }
 
 .mv__title {
     font-family: $fourth-font-family;
     color: $white;
-    font-size: rem(40);
+    font-size: calc(40px + 40 * (100vw - 375px)/393);
+    // font-size: rem(40);
     letter-spacing: 0.53em;
     line-height: 1;
     font-weight: $normal;
@@ -44,7 +59,7 @@
 .mv__text {
     font-family: $base-font-family;
     color: $white;
-    font-size: rem(19);
+    font-size: rem(20);
     letter-spacing: 0.1em;
     line-height: 1;
     font-weight: $normal;
@@ -60,24 +75,30 @@
 .mv-swiper__img {
     position: relative;
     display: block;
+    height: inherit;
 }
 
-.mv-swiper__img::before {
-    content: "";
-    display: block;
-    padding-top: 177.9%;
+// .mv-swiper__img::before {
+//     content: "";
+//     display: block;
+//     padding-top: 177.9%;
 
-    @include mq(md) {
-        padding-top: 53.33%;
-    }
-}
+//     @include mq(md) {
+//         padding-top: 53.33%;
+//     }
+// }
 
 .mv-swiper__img img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     width: 100%;
     height: 100%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
 }
+
+// .mv-swiper__img img {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     width: 100%;
+//     height: 100%;
+//     transform: translate(-50%, -50%);
+//     object-fit: cover;
+// }

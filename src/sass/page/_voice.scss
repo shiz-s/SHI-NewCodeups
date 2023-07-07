@@ -23,12 +23,14 @@
 }
 
 .voice__inner {
+    max-width: rem(600);
     padding: 0 rem(15);
     margin-right: auto;
     margin-left: auto;
 
     @include mq(md) {
-        max-width: $inner + strip-unit($padding-pc) * 2;
+        max-width:78.5%;
+        // max-width: $inner + strip-unit($padding-pc) * 2;
         padding-right: $padding-pc;
         padding-left: $padding-pc;
     }

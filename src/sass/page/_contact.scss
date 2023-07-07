@@ -10,6 +10,16 @@
     }
 }
 
+
+.contact__inner.inner{
+    max-width: rem(600);
+    @include mq(md){
+        // max-width: 100%;
+        max-width:78.5%;
+        // max-width: $inner + strip-unit($padding-pc) * 2;
+    }
+}
+
 .contact__contents {
     width: 100%;
 
@@ -58,6 +68,7 @@
 
     @include mq(md) {
         padding: 0 rem(112) 0 rem(50);
+
     }
 }
 
@@ -65,8 +76,10 @@
     margin-left: rem(20);
     margin-right: rem(20);
     @include mq(md) {
+        // width: 49.94%;
         width: 56.94%;
-        padding-right: rem(81);
+        padding-right: 9%;
+        // padding-right: rem(81);
         // border-right: 1px solid $green-2;
 
         position: relative;
@@ -155,12 +168,14 @@
     width: 100%;
     max-width: rem(600);
     margin-top: rem(20);
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
 
     @include mq(md) {
         width: 62.1%;
         margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
@@ -190,15 +205,18 @@
     margin-top: rem(40);
 
     @include mq(md) {
-        width: 43.12%;
+        width: 48%;
+        // width: 43.12%;
         margin-top: 0;
-        padding-left: rem(80);
+        padding-left: 0%;
+        // padding-left: rem(80);
         border-left: 1px solid $green;
     }
 }
 
 .contact__header-box {
     @include mq(md) {
+        width: 100%;
         padding-left: 0;
         padding-right: 0;
     }
@@ -220,8 +238,20 @@
     line-height: calc(18 / 14);
     color: $green;
     text-align: center;
+    @include mq(md){
+        width: 100%;
+    }
 }
 
 .contact__btn-box {
     margin-top: rem(40);
 }
+
+// .contact__btn-box.btn__box{
+//     @include mq(md){
+//         max-width: 86%;
+//         margin-left: 0;
+//         margin-right: 0;
+//     }
+
+// }
